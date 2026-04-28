@@ -1,0 +1,32 @@
+services:
+  app:
+    build: .
+    container_name: cardrona-app
+    restart: unless-stopped
+    volumes:
+      - ./config.php:/var/www/html/config.php:ro
+      - cardrona_uploads:/var/www/html/uploads
+    depends_on:
+      - db
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.cardrona.rule=Host(`${DOMAIN}`)"
+      - "traefik.http.routers.cardrona.entrypoints=websecure"
+      - "traefik.http.routers.cardrona.tls.certresolver=letsencrypt"
+      - "traefik.http.services.cardrona.loadbalancer.server.port=80"
+
+  db:
+    image: mysql:8.0
+    container_name: cardrona-db
+    restart: unless-stopped
+    environment:
+      MYSQL_ROOT_PASSWORD: ${DB_ROOT_PASSWORD}
+      MYSQL_DATABASE: cardrona_hut
+      MYSQL_USER: cardrona_user
+      MYSQL_PASSWORD: ${DB_PASSWORD}
+    volumes:
+      - cardrona_mysql:/var/lib/mysql
+
+volumes:
+  cardrona_mysql:
+  cardrona_uploads:
