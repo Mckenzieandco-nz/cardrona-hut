@@ -1,0 +1,18 @@
+# Database credentials — never commit this
+config.php
+
+# Uploaded bills and files
+uploads/*
+!uploads/.htaccess
+
+# Setup flag
+.setup_done
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+*.swp
