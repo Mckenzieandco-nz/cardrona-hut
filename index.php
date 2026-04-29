@@ -9,7 +9,7 @@ sessionStart();
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cardrona Hut</title>
+    <title>9 Little Meg</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="min-h-screen flex flex-col items-center justify-center p-6"
@@ -17,8 +17,8 @@ sessionStart();
 
     <div class="text-center mb-10">
         <div class="text-7xl mb-5">🏔</div>
-        <h1 class="text-5xl font-bold text-white tracking-tight mb-2">Cardrona Hut</h1>
-        <p class="text-green-300 text-lg">Cardrona, New Zealand</p>
+        <h1 class="text-5xl font-bold text-white tracking-tight mb-2">9 Little Meg</h1>
+        <p class="text-green-300 text-lg">A little luxury in the Southern Alps</p>
     </div>
 
     <div class="grid grid-cols-1 sm:grid-cols-2 gap-5 w-full max-w-md">

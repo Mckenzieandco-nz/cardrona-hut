@@ -12,7 +12,7 @@ require_once __DIR__ . '/../includes/header.php';
 ?>
 
 <div class="mb-8">
-    <h1 class="text-2xl font-bold text-stone-800">Welcome to Cardrona Hut</h1>
+    <h1 class="text-2xl font-bold text-stone-800">Welcome to 9 Little Meg</h1>
     <p class="text-stone-500 mt-1">Everything you need for a great stay.</p>
 </div>
 

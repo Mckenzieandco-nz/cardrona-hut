@@ -25,7 +25,7 @@ $isOwner = ($section ?? '') === 'owner';
     <div class="max-w-6xl mx-auto px-4">
         <div class="flex items-center justify-between h-14">
             <div class="flex items-center gap-1">
-                <a href="<?= url('/owner/dashboard.php') ?>" class="font-bold text-base mr-4 tracking-tight whitespace-nowrap">⛷ Cardrona Hut</a>
+                <a href="<?= url('/owner/dashboard.php') ?>" class="font-bold text-base mr-4 tracking-tight whitespace-nowrap">⛷ 9 Little Meg</a>
                 <div class="hidden md:flex items-center gap-0.5">
                     <?php
                     $navLinks = [
@@ -63,7 +63,7 @@ $isOwner = ($section ?? '') === 'owner';
 <!-- ── Guest nav ── -->
 <nav class="bg-stone-800 text-white shadow">
     <div class="max-w-4xl mx-auto px-4 h-12 flex items-center gap-3">
-        <a href="<?= url('/guest/') ?>" class="font-semibold tracking-wide">🏔 Cardrona Hut</a>
+        <a href="<?= url('/guest/') ?>" class="font-semibold tracking-wide">🏔 9 Little Meg</a>
     </div>
 </nav>
 <?php endif; ?>

@@ -7,7 +7,7 @@ define('DB_NAME', 'your_database_name');
 define('DB_USER', 'your_database_user');
 define('DB_PASS', 'your_database_password');
 
-define('SITE_NAME', 'Cardrona Hut');
+define('SITE_NAME', '9 Little Meg');
 
 // Leave empty if installed in domain root
 // Set to '/hut' if installed in a subdirectory
