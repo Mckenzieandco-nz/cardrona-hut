@@ -18,7 +18,7 @@ sessionStart();
     <div class="text-center mb-10">
         <div class="text-7xl mb-5">🏔</div>
         <h1 class="text-5xl font-bold text-white tracking-tight mb-2">9 Little Meg</h1>
-        <p class="text-green-300 text-lg">A little luxury in the Southern Alps</p>
+        <p class="text-green-300 text-lg">A little luxury in Cardrona</p>
     </div>
 
     <div class="grid grid-cols-1 sm:grid-cols-2 gap-5 w-full max-w-md">
