@@ -34,6 +34,7 @@ $isOwner = ($section ?? '') === 'owner';
                         'bills'     => ['Bills',        '/owner/bills.php'],
                         'jobs'      => ['Jobs',         '/owner/jobs.php'],
                         'guides'    => ['Guides',       '/owner/guides.php'],
+                        'guestbook' => ['Guest Book',   '/owner/guestbook.php'],
                     ];
                     foreach ($navLinks as $key => [$label, $path]):
                         $active = ($currentPage ?? '') === $key;

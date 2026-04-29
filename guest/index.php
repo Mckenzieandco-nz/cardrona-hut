@@ -36,4 +36,17 @@ require_once __DIR__ . '/../includes/header.php';
 </div>
 <?php endif; ?>
 
+<!-- Guest Book link -->
+<div class="mt-8">
+    <a href="<?= url('/guest/guestbook.php') ?>"
+       class="flex items-center gap-4 bg-amber-50 hover:bg-amber-100 border border-amber-200 hover:border-amber-300 rounded-xl p-5 transition group">
+        <div class="text-3xl">📖</div>
+        <div>
+            <div class="font-semibold text-stone-800 group-hover:text-amber-800">Guest Book</div>
+            <div class="text-sm text-stone-500">Read messages from past guests — or leave your own</div>
+        </div>
+        <div class="ml-auto text-stone-400 group-hover:text-amber-600 text-lg">→</div>
+    </a>
+</div>
+
 <?php require_once __DIR__ . '/../includes/footer.php'; ?>
