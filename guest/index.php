@@ -36,6 +36,7 @@ require_once __DIR__ . '/../includes/header.php';
 </div>
 <?php endif; ?>
 
+<?php if (getSetting('guestbook_enabled', '1') === '1'): ?>
 <!-- Guest Book link -->
 <div class="mt-8">
     <a href="<?= url('/guest/guestbook.php') ?>"
@@ -48,5 +49,6 @@ require_once __DIR__ . '/../includes/header.php';
         <div class="ml-auto text-stone-400 group-hover:text-amber-600 text-lg">→</div>
     </a>
 </div>
+<?php endif; ?>
 
 <?php require_once __DIR__ . '/../includes/footer.php'; ?>

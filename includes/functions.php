@@ -51,6 +51,22 @@ function verifyCsrf(): void {
     }
 }
 
+function getSetting(string $key, string $default = ''): string {
+    static $cache = [];
+    if (!isset($cache[$key])) {
+        $stmt = db()->prepare('SELECT value FROM settings WHERE `key` = ?');
+        $stmt->execute([$key]);
+        $row = $stmt->fetch();
+        $cache[$key] = $row ? $row['value'] : $default;
+    }
+    return $cache[$key];
+}
+
+function setSetting(string $key, string $value): void {
+    db()->prepare('INSERT INTO settings (`key`, value) VALUES (?, ?) ON DUPLICATE KEY UPDATE value = ?')
+       ->execute([$key, $value, $value]);
+}
+
 function priorityBadge(string $priority): string {
     $map = [
         'high'   => 'bg-red-100 text-red-700',

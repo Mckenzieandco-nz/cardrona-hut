@@ -4,6 +4,12 @@ require_once __DIR__ . '/../includes/db.php';
 require_once __DIR__ . '/../includes/auth.php';
 require_once __DIR__ . '/../includes/functions.php';
 
+// Redirect away if disabled
+if (getSetting('guestbook_enabled', '1') !== '1') {
+    header('Location: ' . url('/guest/'));
+    exit;
+}
+
 $success = null;
 $error   = null;
 
